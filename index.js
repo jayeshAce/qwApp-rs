@@ -116,6 +116,5 @@ app.get('/dashboard', async (http_request, http_response) => {
         http_response.render('dashboard.ejs', { 'teamData' : results });
     });
 });
-//remove nodumodules
 
 app.listen(3000, () => console.log('Application is listening on port 3000.'));
