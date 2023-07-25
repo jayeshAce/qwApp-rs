@@ -1,0 +1,13 @@
+<%- include('header'); -%>
+
+<% for(var i = 0; i< teamData.length; i++) { %>
+
+    <tr>
+        <th scope="row"><%= (i+1) %></th>
+        <td><%= teamData[i].domain%></td>
+        <td><%= teamData[i].access_token%></td>
+    </tr>
+
+<% } %>    
+
+<%- include('footer'); -%>
